@@ -1,21 +1,62 @@
 #!/bin/bash -x
+number1=${RANDOM:0:3}
+echo $number1
+number2=${RANDOM:0:3}
+echo $number2
+number3=${RANDOM:0:3}
+echo $number3
+number4=${RANDOM:0:3}
+echo $number4
+number5=${RANDOM:0:3}
+echo $number5
+if [ $number1 -gt $number2 ]
+then
+  	max=$number1
 
-#converting 42 inch into feet
-measureInFeet=`expr 42/12 | bc -l`
-echo $measureInFeet
-
-#calculating area of rectangle in feets
-rectangleLength=60
-rectangleWidth=40
-plotAreaInFeet=$(( 60*40 ))
-
-#coverting plot area into meters from Feet
-plotAreaInMeters=`expr $plotAreaInFeet\*0.3048 | bc -l`
-echo $plotAreaInMeters
-
-#coverting plot area into Acers from Meters
-plotAreaInAcers=`expr $plotAreaInMeters\*0.000247 | bc -l`
-
-#calculating area of 25 such plots in Acers
-TwentyFiveplotsAreaInAcers=`expr 25\*$plotAreaInAcers | bc -l`
-echo $TwentyFiveplotsAreaInAcers
+else
+ 	max=$number2
+fi
+if [ $max -gt $number3 ]
+then
+        max=$max
+else
+        max=$number3
+fi
+if [ $max -gt $number4 ]
+then
+        max=$max
+else
+        max=$number4
+fi
+if [ $max -gt $number5 ]
+then
+        max=$max
+else
+        max=$number5
+fi
+echo "the maximum number is $max"
+if [ $number1 -lt $number2 ]
+then
+        min=$number1
+else
+        min=$number2
+fi
+if [ $min -lt $number3 ]
+then
+        min=$min
+else
+        min=$number3
+fi
+if [ $min -lt $number4 ]
+then
+        min=$min
+else
+        min=$number4
+fi
+if [ $min -lt $number5 ]
+then
+        min=$min
+else
+        min=$number5
+fi
+echo "the minimum number is $min”
