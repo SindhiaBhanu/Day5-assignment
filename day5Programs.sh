@@ -1,36 +1,27 @@
 #!/bin/bash -x
 read -p "Enter a single number :" number
-if [ $number -eq "0" ]
+if [ $number -eq "1" ]
 then
-    	echo "ZERO"
-elif [ $number -eq "1" ]
-then
-    	echo "ONE"
+    	echo "SUNDAY"
  
 elif [ $number -eq "2" ]
 then
-    	echo "TWO"
+    	echo "MONDAY"
 elif [ $number -eq "3" ]
 then
-    	echo "THREE"
+    	echo "TUESDAY"
 elif [ $number -eq "4" ]
 then
-    	echo "FOUR"
+    	echo "WEDNESDAY"
 elif [ $number -eq "5" ]
 then
-    	echo "FIVE"
+    	echo "THURSDAY"
 elif [ $number -eq "6" ]
 then
-    	echo "SIX"
+    	echo "FRIDAY"
 elif [ $number -eq "7" ]
 then
-    	echo "SEVEN"
-elif [ $number -eq "8" ]
-then
-    	echo "EIGHT"
-elif [ $number -eq "9" ]
-then
-    	echo "NINE"
+    	echo "SATURDAY"
 else
-    	echo "Please enter a single digit number only"
+    	echo "Enter a valid number"
 fi
