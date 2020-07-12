@@ -1,27 +1,24 @@
 #!/bin/bash -x
-read -p "Enter a single number :" number
+read -p "Enter a  number :" number
 if [ $number -eq "1" ]
 then
-    	echo "SUNDAY"
- 
-elif [ $number -eq "2" ]
+        echo "UNIT"
+elif [ $number -eq "10" ]
 then
-    	echo "MONDAY"
-elif [ $number -eq "3" ]
+        echo "TEN"
+
+elif [ $number -eq "100" ]
 then
-    	echo "TUESDAY"
-elif [ $number -eq "4" ]
+        echo "HUNDRED"
+elif [ $number -eq "1000" ]
 then
-    	echo "WEDNESDAY"
-elif [ $number -eq "5" ]
+        echo "THOUSAND"
+elif [ $number -eq "10000" ]
 then
-    	echo "THURSDAY"
-elif [ $number -eq "6" ]
+        echo "TEN THOUSAND"
+elif [ $number -eq “100000” ]
 then
-    	echo "FRIDAY"
-elif [ $number -eq "7" ]
-then
-    	echo "SATURDAY"
+        echo “LAKH”
 else
-    	echo "Enter a valid number"
+        echo "Enter a valid number"
 fi
