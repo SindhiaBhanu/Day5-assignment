@@ -1,27 +1,20 @@
 #!/bin/bash -x
 read -p "Enter the number : " number
 case $number in
-        "0" )
-                echo "ZERO";;
         "1" )
-                echo "ONE";;
+                echo "SUNDAY";;
         "2" )
-                echo "TWO";;
+                echo "MONDAY";;
         "3" )
-                echo "THREE";;
+                echo "TUESDAY";;
         "4" )
-                echo "FOUR";;
+                echo "WEDNESDAY";;
         "5" )
-                echo "FIVE";;
+                echo "THURSDAY";;
         "6" )
-                echo "SIX";;
+                echo "FRIDAY";;
         "7" )
-                echo "SEVEN";;
-        "8" )
-                echo "EIGHT";;
-        "9" )
-                echo "NINE";;
+                echo "SATURDAY";;
         * )
                 echo "Enter a valid number";;
 esac
-
